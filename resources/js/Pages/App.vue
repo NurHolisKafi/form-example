@@ -128,7 +128,7 @@ onMounted(() => {
                             class="form-control"
                             :class="{ 'border-danger': err.email }"
                             autocomplete="email"
-                            placeholder="Enter email"
+                            placeholder="Cth: www@gmail.com"
                             required
                         />
                         <small v-if="err.email" class="text-danger">{{
