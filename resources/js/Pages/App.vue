@@ -83,6 +83,7 @@ onMounted(() => {
                             :class="{ 'border-danger': err.name }"
                             autocomplete="name"
                             placeholder="Cth: Jonathan Akbar"
+                            required
                         />
                         <small v-if="err.name" class="text-danger">{{
                             err.name[0]
@@ -112,6 +113,7 @@ onMounted(() => {
                             :class="{ 'border-danger': err.phone }"
                             autocomplete="tel"
                             placeholder="Cth: 0893239851289"
+                            required
                         />
                         <small v-if="err.phone" class="text-danger">{{
                             err.phone[0]
@@ -127,6 +129,7 @@ onMounted(() => {
                             :class="{ 'border-danger': err.email }"
                             autocomplete="email"
                             placeholder="Enter email"
+                            required
                         />
                         <small v-if="err.email" class="text-danger">{{
                             err.email[0]
@@ -138,6 +141,7 @@ onMounted(() => {
                             :class="{ 'border-danger': err.year }"
                             v-model="form.year"
                             placeholder="Pilih Tahun"
+                            required="true"
                             year-picker
                         />
                         <small v-if="err.year" class="text-danger">{{
@@ -152,7 +156,7 @@ onMounted(() => {
                             :class="{ 'border-danger': err.skillset }"
                             :options="reqskills"
                             :searchable="true"
-                            placeholder="Pilih Jabatan"
+                            placeholder="Pilih Skill"
                             :multiple="true"
                         />
                         <small v-if="err.skillset" class="text-danger">{{

@@ -4,7 +4,6 @@ namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ApplyRequest;
-use App\Http\Resources\JobsCollection;
 use App\Models\Candidates;
 use App\Models\Jobs;
 use App\Models\Skills;

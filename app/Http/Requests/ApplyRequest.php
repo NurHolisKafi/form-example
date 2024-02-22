@@ -32,4 +32,22 @@ class ApplyRequest extends FormRequest
             'skillset' => 'required'
         ];
     }
+
+    /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'job_id.required' => 'Job tidak boleh kosong',
+            'skillset.required' => 'Skill tidak boleh kosong',
+            'email.email' => 'Email tidak valid',
+            'email.unique' => 'Email sudah terdaftar',
+            'phone.unique' => 'No telepon sudah terdaftar',
+            'phone.numeric' => 'No telepon harus berisi angka',
+            'phone.min' => 'Angka no telepon tidak boleh kurang dari 0',
+        ];
+    }
 }
